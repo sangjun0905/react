@@ -126,7 +126,7 @@ function App() {
       const newTopics = [...topics];
       const updateTopic = {id:id, title:title, body:body};
       for(let i=0;i<newTopics.length;i++){
-        if(newTopics.id === id){
+        if(newTopics[i].id === id){
           newTopics[i] = updateTopic;
           break;
         }
